@@ -1,6 +1,7 @@
 import { Overlay, ModalImage } from './Modal.styled';
 import { createPortal } from 'react-dom';
 import { Component } from 'react';
+
 const modalRoot = document.querySelector('#modal-root');
 
 export class Modal extends Component {
