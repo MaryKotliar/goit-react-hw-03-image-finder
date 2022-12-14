@@ -4,12 +4,13 @@ import { GalleryItemContent } from 'components/ImageGalleryItem/ImageGalleryItem
 export const ImageGallery = ({ images }) => {
   return (
     <>
-      <Gallery id="gallery">
+      <Gallery>
         {images.map(image => (
           <GalleryItem key={image.id}>
             <GalleryItemContent
               image={image.webformatURL}
               largeImage={image.largeImageURL}
+              tags={image.tags}
             ></GalleryItemContent>
           </GalleryItem>
         ))}
@@ -19,5 +20,4 @@ export const ImageGallery = ({ images }) => {
 };
 ImageGallery.propTypes = {
   images: PropTypes.arrayOf(PropTypes.object).isRequired,
-  key: PropTypes.string.isRequired,
 };

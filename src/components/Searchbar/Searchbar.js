@@ -7,7 +7,7 @@ export class Searchbar extends Component {
     searchName: '',
   };
   static propTypes = {
-    onSubmt: PropTypes.func.isRequired,
+    onSubmit: PropTypes.func.isRequired,
   };
   handleChange = event => {
     this.setState({
